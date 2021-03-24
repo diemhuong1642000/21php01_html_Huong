@@ -1,0 +1,22 @@
+body{
+    background-color: green;
+}
+.container{
+    height:300px;
+}
+.new1,new2{
+    width:48%
+}
+.new3{
+    width:100%;
+}
+@media screen and (max-width: 1024px){
+    body{
+        background-color: rgb(189, 64, 85);
+    }
+}
+@media screen and (max-width: 960px){
+    body{
+        background-color: rgb(65, 88, 163);
+    }
+}

@@ -1,0 +1,51 @@
+.main{
+    width:800px;
+    height:500px;
+    border:1px solid black;
+    margin:0 auto;
+}
+.header{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width:790px;
+    padding:5px;
+    height:60px;
+    border:1px solid black;
+}
+.Navigation{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    width:790px;
+    height:60px;
+    border:1px solid black;
+}
+.left{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height:260px;
+    float:left;
+    width:300px;
+    border:1px solid black;
+}
+.right{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height:260px;
+    float:left;
+    width:496px;
+    border:1px solid black;
+}
+.footer{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top:10px;
+    text-align: center;
+    width:800px;
+    height:300px;
+    margin:10px;
+}
