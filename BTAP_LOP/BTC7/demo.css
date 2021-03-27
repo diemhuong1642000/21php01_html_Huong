@@ -79,7 +79,7 @@ body{
         float:right;
     }
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 580px){
     .logo{
         display: 100%;
     }
@@ -95,15 +95,16 @@ body{
         width:100%;
     }
     .right{
-        float:none;
+        float:left;
         width:100%;
     }
     .ft1{
+        clear: both;
         float:none;
         width:100%;
     }
     .ft2{
-        float:none;
         display: none;
+        float:none;
     }
 }

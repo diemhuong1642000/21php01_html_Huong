@@ -24,8 +24,7 @@ ul li{
     margin-left: -5px;
 }
 ul li a{
-    display: block;
-    
+    display: block; 
     font-weight: bold;
     color:blue;
 }
