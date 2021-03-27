@@ -4,19 +4,28 @@ body{
 .container{
     height:300px;
 }
-.new1,new2{
+.new1,.new2{
+    width:48%
+}
+.new1,.new2,.new3{
+    border:1px solid red;
     width:48%
 }
 .new3{
     width:100%;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1280px){
     body{
         background-color: rgb(189, 64, 85);
     }
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 768px){
     body{
         background-color: rgb(65, 88, 163);
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        background-color: rgb(167, 141, 29);
     }
 }

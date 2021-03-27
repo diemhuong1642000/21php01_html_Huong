@@ -1,0 +1,109 @@
+body{
+    background-color: green;
+}
+.container{
+    width:100%;
+    overflow: auto;
+}
+.header{
+    width:100%;
+    height:150px;
+    background-color: blanchedalmond;
+   
+}
+    .logo{
+        width:30%;
+        height:150px;
+        float:left;
+        background-color: coral;
+    }
+    .banner{
+        width:70%;
+        height:150px;
+        float:right;
+        background-color: rgb(134, 45, 175);
+    }
+.mid{
+    width:100%;
+    height:100px;
+    background-color: olive;
+    }
+.main{
+    width:100%;
+    height:200px;
+    background-color: papayawhip;
+}
+    .left{
+        width:50%;
+        height:200px;
+        float:left;
+        background-color: coral;
+    }
+    .right{
+        width:50%;
+        height:200px;
+        float:right;
+        background-color: rgb(45, 112, 175);
+    }
+.ft1{
+    width:100%;
+    height:100px;
+    background-color: wheat;
+}
+.ft2{
+    width:100%;
+    height:100px;
+    background-color: rgb(22, 168, 71);
+}
+@media  screen and (max-width: 1280px){
+    body{
+        background-color: rgb(189, 64, 85);
+    }
+}
+@media  screen and (max-width: 768px){
+    .logo{
+        width:100%;
+    }
+    .banner{
+        width:100%;
+    }
+    .mid{
+        display: none;
+    }
+    .ft1{
+        width:50%;
+        float:left;
+    }
+    .ft2{
+        width:50%;
+        float:right;
+    }
+}
+@media only screen and (max-width: 480px){
+    .logo{
+        display: 100%;
+    }
+    .banner{
+        display: none;
+    }
+    .mid{
+        display: block;
+        width:100%;
+    }
+    .left{
+        float:none;
+        width:100%;
+    }
+    .right{
+        float:none;
+        width:100%;
+    }
+    .ft1{
+        float:none;
+        width:100%;
+    }
+    .ft2{
+        float:none;
+        display: none;
+    }
+}
