@@ -41,7 +41,7 @@ ul li a.lastItem{
     clear: both;
     font-weight: none;
     font-size: 30px;
-    height:190px;
+    height:170px;
     text-align: right;
     border-radius: 20px;
     color:white;
@@ -61,7 +61,7 @@ ul li a.lastItem{
     color:white;
     font-size: 30px;
     width:48%;
-    height:110px;
+    height:100px;
     margin-bottom: 10px;
     background: rgb(17, 156, 190);
 }
