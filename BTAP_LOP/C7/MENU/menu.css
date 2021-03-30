@@ -1,0 +1,33 @@
+body{
+    width:20%;
+    border: 1px solid black;
+    padding:7px;
+    margin: 8px;
+    box-shadow: 8px 8px 8px grey;
+}
+.body{
+    margin: 5px;
+}
+ul li{
+    list-style-type: none;
+    border: 1px solid blue;
+    padding:5px;
+    color:blue;
+    font-weight: bold;
+    margin:2px;
+    cursor: pointer;
+}
+ul li:hover{
+    background: cadetblue;
+    color:white;
+}
+ul li a{
+    font-weight: bold;
+    display: block;
+}
+.current{
+    background: dimgray;
+}
+ul li a:hover{
+    background: forestgreen;
+}
