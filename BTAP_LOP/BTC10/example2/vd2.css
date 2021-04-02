@@ -1,0 +1,33 @@
+table{
+    margin:0 auto;
+    width:1500px;
+    padding: 5px;
+    border-collapse: collapse; /* bỏ trùng lặp border*/
+}
+.my-table{
+    overflow: scroll;
+}
+table,tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+ 
+}
+/* thead,tfoot{
+    background-color: cadetblue;
+} */
+/* td:nth-child(2){
+    color:blue;
+} */ /* cột thứ 2 màu xanh (even:chẵn,odd:lẻ)*/
+/* .tvl{
+    width:100px;
+} */
+.dgx{
+    background-color: rgb(214, 202, 25);
+}
+.tc{
+    color:red;
+}
+.xanh{
+    color:blue;
+}

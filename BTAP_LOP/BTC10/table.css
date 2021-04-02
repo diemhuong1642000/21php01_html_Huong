@@ -1,0 +1,14 @@
+table{
+    width:800px;
+    border-collapse: collapse; /* bỏ trùng lặp border*/
+}
+table,tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+thead,tfoot{
+    background-color: cadetblue;
+}
+td:nth-child(2){
+    color:blue;
+} /* cột thứ 2 màu xanh (even:chẵn,odd:lẻ)*/
