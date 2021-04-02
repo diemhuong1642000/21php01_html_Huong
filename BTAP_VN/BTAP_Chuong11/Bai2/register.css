@@ -11,7 +11,7 @@ body {
 }
 
 .login{
-    width:350px;
+    width:360px;
     margin-right:20px;
     float:left;
 }
@@ -35,13 +35,21 @@ body {
     border: 1px solid black;
 }
 .star:after {
-    content:"*";color:red;
+    content:"*";
+    color:red;
   }
 .button {
 	margin-top: 20px;
 }
 .button2 {
 	margin-top: 10px;
+}
+.divide,.divide2{
+    float:left;
+    width:149px;
+}
+.divide{ 
+    margin-right:10px;
 }
 .size {
 	width: 100%;
@@ -52,3 +60,4 @@ body {
 	height: 30px;
 	width: 100px;
 }
+
