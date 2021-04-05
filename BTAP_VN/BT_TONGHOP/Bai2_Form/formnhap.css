@@ -1,0 +1,166 @@
+* {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: tahoma;
+    width: 100vw;
+    height: auto;
+    color:black;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width:700px;
+    padding: 6px;
+    height:40px;
+    border: 1px solid  #EEEEEE;;
+    background-color: #EEEEEE;
+    color: rgb(15, 15, 15);
+ 
+}
+.leftt{
+    float:left;
+}
+.rightt{
+    width:400px;
+    background-color: lightgreen;
+    float:right;
+}
+.both{
+    width:300px;
+    background-color: lightseagreen;
+    float:left;
+}
+.container{
+    margin-top: 20px;
+    width:600px;
+    height:320px;
+    border: 1px solid black;
+}
+.header2{
+    background-color: #EEEEEE;
+    color:black;
+    padding:5px;
+    height:35px;
+}
+form div{
+    margin-bottom: 10px ;
+ }
+ label {  
+     line-height: 23px;
+     float: left;  
+ }
+ form input#pass{
+     width:320px;
+     margin-left: 19px;
+     padding:5px;
+ }
+ form input#tendv{
+    width:325px;
+    margin-left: 28px;
+    padding:5px;
+}
+ form input#email{
+     margin-left: 27px;
+     padding:5px;
+ }
+ #form {
+     width:  590px;
+     padding: 10px 0px 0px 50px;
+ }
+ form select#dv{
+     width:175px;
+    margin-left: 32px;
+    padding:5px;
+ }
+ 
+ #jobs {
+     margin-left: 20px;
+ }
+ 
+ 
+ #button:hover {
+     color: #fff;
+     background: #5197FF;
+     cursor: pointer;
+ }
+ .dv{
+     width:150px;
+     padding:5px;
+     margin-left:5px;
+ }
+ .texts{
+     margin-left:60px;
+ }
+ .mv{
+     margin-left:110px;
+ }
+ .tdv{
+    margin-left:60px;
+ }
+ .tdv:after{  
+    content:"(*)";
+    color:red;
+ }
+ .ndv{
+    margin-left:65px;
+}
+.gb{
+    margin-left:90px;
+}
+.gb:after{
+    
+    content:"(*)";
+    color:red;
+ }
+ .cb{
+     padding:20px;
+     margin-left:20px;
+ }
+ .footer{
+     
+    background-color: #EEEEEE;
+    color:black;
+    padding:5px;
+    height:35px;
+    
+}
+.ft{
+    width:600px;
+    margin-top:20px;
+    border: 1px solid black;
+    height:105px;
+}
+.anh{
+    float:right;
+    margin-top: 20px;
+    background-color: rgb(18, 152, 214);
+    color: white;
+    width:120px;
+    padding: 5px;
+    margin-right: 15px;
+    height:30px;
+}
+.create:before {
+    padding: 5px;
+    content: url(../image/picture.png);
+    width:10px;
+    height:10px;
+   
+}
+.save:before {
+    padding: 5px;
+    content: url(../image/save.png);
+    width:10px;
+    height:10px;
+   
+}
+.save1{
+    width:155px;
+    float:right;
+    padding: 2px;
+    background-color:rgba(153, 50, 204, 0.418);
+    color: white;
+}

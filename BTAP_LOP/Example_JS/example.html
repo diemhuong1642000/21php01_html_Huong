@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="example.js">
+  <!--   Intelnal -->
+  
+</head>
+<body>
+    <!--   Intelnal -->
+    <p onclick="alert('Xin chào Hương')">Click me, please</p>
+    <div id="demo"> Test Click</div>
+    <div id="test_external" onlick="testExternal();">Demo External</div>
+    <!-- có thể thay đổi nội dung HTML -->
+    <div id="change_content"> Đây là nội dung đầu tiên</div>
+    <a href="#" onmouseover="change_content();">Change content</a>
+    <!-- Có thể thay đổi thuộc tính HTML -->
+    <img src="h1.jpg" alt="test image" id="change_image" width="200" height="200">
+    <a href="#" onclick="changeImage();">Change image</a>
+    <!-- Có thể thay đổi đối tượng  -->
+    <a href="#" onclick="hideImage();">HideImage</a>
+    <a href="#" onclick="hideImage();">HideImage</a>
+    <!--   Intelnal -->
+    <script>
+        document.getElementById("demo").innerHTML="Hello Hương";
+        document.getElementById("demo").style.color="red";
+    </script>
+    <!-- External -->
+    <script type="text/javascript" src="example.js"></script>
+    
+</html>

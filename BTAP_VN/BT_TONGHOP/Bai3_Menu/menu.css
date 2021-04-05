@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin-left:50px;
+}
+ul{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-family: tahoma;
+    color: white;
+}
+.menu ul{
+    position: absolute;
+    top:42px;
+    left:0;
+    display: none;
+}
+.menu li{
+    float:left;
+    width:150px;
+    line-height: 1.5em;
+    position: relative;
+    text-align: center;
+    background: teal;
+    padding: 10px;
+}
+.menu li:hover{
+    background: green;
+    cursor: pointer;
+}
+.menu ul ul{
+    left:150px;
+    top:0;
+}

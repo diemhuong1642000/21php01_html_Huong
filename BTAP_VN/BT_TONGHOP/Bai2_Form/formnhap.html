@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formnhap.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="leftt">
+                <p>Quản lý hàng hóa/ Thêm mới hàng hóa</p>
+            </div>
+            <div class="save1">
+                <span class="save">Lưu & Thêm mới</span>
+            </div>
+            <!-- <div class="rightt">
+                <div class="both">
+                    <div>
+                        <img src="../image/back.jpg" width="20px" height="20px">
+                    </div>
+                    <p>Quay lại</p>
+                </div>
+                <div class="both">
+                    <div>
+                        <img src="../image/back.jpg" width="20px" height="20px">
+                    </div>
+                    <p>Quay lại</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="container">
+            <div class="header2">
+                <p>Thông tin cơ bản</p>
+            </div>
+            <form method="post" action="" id="form">
+                <div>
+                    <label class="texts">Loại sản phẩm</label>
+                    <select name="dv" id="dv">
+                        <option value="1">Dịch vụ</option>
+                        <option value="2">Vui chơi</option>
+                        <option value="3">Tiêu dùng</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="texts"> Mã dịch vụ(SKU)</label>
+                    <input type="password" name="pass" id="pass" placeholder="Mã hàng hóa tự động" />
+                </div>
+                <div>
+                    <label class="mv">Mã vạch</label>
+                    <input type="text" name="email" id="email" placeholder="Mã vạch sản phẩm" />
+
+
+                </div>
+
+                <div>
+                    <label class="tdv"> Tên Dịch Vụ</label>
+                    <input type="text" name="email" id="tendv" />
+                </div>
+
+                <div>
+                    <label class="ndv"> Nhóm Dịch Vụ</label>
+                    <input type="text" name="email" id="email" placeholder="Chọn hoặc nhập tên nhóm hàng hóa" />
+                </div>
+                <div>
+                    <label class="gb"> Gía bán</label>
+                    <input type="text" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="jobs"> Quản lý theo Serial/IMEI</label>
+                    <input class="cb" type="checkbox" name="checkbox">
+                </div>
+            </form>
+        </div>
+        <div class="ft">
+            <div class="footer">
+                <p>Ảnh hàng hóa</p>
+            </div>
+            <div class="anh">
+                <span class="create">Thêm ảnh</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

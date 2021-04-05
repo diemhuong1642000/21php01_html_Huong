@@ -1,0 +1,16 @@
+table{
+    margin:0 auto;
+    width:800px;
+    border-collapse: collapse; /* bỏ trùng lặp border*/
+}
+table,tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+td{
+    padding:10px 6px;
+}
+
+.head{
+    padding:10px 6px;
+}
