@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="./form.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="form-1">
+          <h3 class="heading">Liên hệ với chúng tôi</h3>
+  
+          <div class="spacer"></div>
+  
+          <div class="form-group">
+            <label for="fullname" class="form-label">Họ và tên</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Nhập tên   " class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="Nhập email  " class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="title" class="form-label">Tiêu đề</label>
+            <input id="title" name="title" type="title" placeholder="Nhập tiêu đề" class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="content" class="form-label">Nội dung</label>
+            <input id="content" name="content" placeholder="Nhập nội dung" type="content" class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <button class="form-submit">Gửi</button>
+        </form>
+  
+      </div>
+      
+      <script>
+  
+        document.addEventListener('DOMContentLoaded', function () {
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#fullname', 'Vui lòng nhập tên của bạn'),
+              Validator.isEmail('#email','Vui lòng nhập email của bạn'),
+              Validator.isRequired('#title', 'Vui lòng nhập tiêu đê'),
+              Validator.isRequired('#content', 'Vui lòng nhập nội dung'),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+  
+  
+          /* Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });*/
+        });
+   
+      </script>
+</body>
+
+</html>

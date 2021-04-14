@@ -19,6 +19,7 @@ function insertOp(op){
 	operator = true;
 	equal = false;
 	allow = false;
+	/* textview.value = exp +num; */
 }
 function insertDec(){
 	if (number &&! decimal) {
