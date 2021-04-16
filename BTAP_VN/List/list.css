@@ -14,7 +14,7 @@ body {
 }
 .content {
   flex: 1;
-  background: #333;
+  background:burlywood;
   padding: 12px;
 }
 .content.left {
