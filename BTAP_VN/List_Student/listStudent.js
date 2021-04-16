@@ -8,10 +8,10 @@ var Students = [
 ];
 
 var Table="<table>";
-for (var y=0; y<Students.length; y++ ) { 
+for (var i=0; i<Students.length; i++ ) { 
     Table += "<tr>";
-  for (var x=0; x<Students[y].length; x++ ) { 
-    Table += "<td>" + Students[y][x] + "</td>";
+  for (var j=0; j<Students[i].length; j++ ) { 
+    Table += "<td>" + Students[i][j] + "</td>";
   }
   Table += "</tr>";
 }
