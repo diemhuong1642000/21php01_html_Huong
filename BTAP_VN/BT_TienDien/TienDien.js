@@ -178,7 +178,6 @@ function checkInput() {
 
 }
 function Export() {
-       /*  <table>
         var Table="<table>"; 
         var n = document.getElementsByName("name");
         var d = document.getElementsByTagName("sdk");
@@ -186,7 +185,7 @@ function Export() {
         Table += "<td>" + n + "</td>";
         Table += "<td>" + d + "</td>";
         Table += "<td>" + c + "</td>";
-        </table>  */     
+
 }
 
 
