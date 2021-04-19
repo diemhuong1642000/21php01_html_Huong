@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.main {
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+}
+input{
+    background-color: #eee;
+}
+.form .heading {
+    font-size: 2.3rem;
+    float: center;
+    
+}
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+.radioo{
+    margin-top:10px;
+    font-family:Georgia;
+    font-size: 18px;
+}
+.Date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:10px;
+}
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+.pd{
+    padding:40px;
+    margin:10px;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: blue;
+    margin-top: 7px;
+    padding:14px;
+    float:center;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 50%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.spacer {
+    margin-top: 40px;
+}
+#content{
+    width:310px;
+    height:100px;
+    text-align: left;
+}
+.sum_money{
+    width:310px;
+    padding:5px;
+    font-weight: bold;
+    background-color: rgb(250, 241, 215);
+}
+.sum_moneys{
+    width:180px;
+    padding:5px;
+    margin-left: 70px;
+    margin-top: 5px;
+    height:30px;
+    background-color: rgb(250, 241, 215);
+}

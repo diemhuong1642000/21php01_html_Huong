@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TienDien.css">
+    <script src="./TienDien.js"></script>
+    <title>TienDien</title>
+</head>
+
+<body class="body">
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Thanh Toán Tiền Điện</h3>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Họ và tên</label>
+                <input id="fullname" name="fullname" type="text" placeholder="Nhập họ tên" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="sdk" class="form-label">Số đầu kì</label>
+                <input id="sdk" name="sdk" type="text" placeholder="Nhập số đầu kì" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="sck" class="form-label">Số cuối kì</label>
+                <input id="sck" onchange="checkInput()" name="sck" type="title" placeholder="Nhập số cuối kì" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                <span class="form-message"></span>
+            </div>
+           
+            <div class="form-group">
+                <label for="title" class="form-label">Giới tính</label>
+                <div class="radioo">
+                    <input type="radio" value="male" name="aa">
+                    <label for="male">Male</label>
+                    <input type="radio" value="female" name="aa">
+                    <label for="female">Female</label>
+                </div>
+            <div>
+                <div class="form-group">
+                    <label for="title" class="form-label">Ngày Sinh</label>
+                    <div clas="pd">
+                        <select name="date" id="date">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                          <select name="month" id="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                          <select name="year" id="year">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                          </select>
+                    </div>
+                   
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="title" class="form-label">Ngày Đầu Kì</label>
+                        <div clas="pd">
+                            <select name="date" id="date">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                              <select name="month" id="month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                              <select name="year" id="year">
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                              </select>
+                        </div>
+                       
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="title" class="form-label">Ngày Cuối Kì</label>
+                            <div clas="pd">
+                                <select name="date" id="date">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                  </select>
+                                  <select name="month" id="month">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                    <option value="3">7</option>
+                                    <option value="4">8</option>
+                                  </select>
+                                  <select name="year" id="year">
+                                    <option value="2000">2019</option>
+                                    <option value="2001">2020</option>
+                                    <option value="2002">2021</option>
+                                    <option value="2003">2022</option>
+                                  </select>
+                            </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <button class="sum_money" for="sum" class="form-label">Tổng tiền</button>
+                            <button class="sum_moneys" for="display" class="form-label"></button>
+                        </div>    
+            </div>
+            <button class="form-submit">Xuất hóa đơn</button>
+        </form>
+
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#fullname', 'Vui lòng nhập tên của bạn'),
+                    Validator.isRequired('#sdk', 'Vui lòng nhập số đầu kì'),
+                    Validator.isRequired('#sck', 'Vui lòng nhập số cuối kì'),
+                    
+                ],
+                onSubmit: function (data) {
+                    
+                    console.log(data);
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

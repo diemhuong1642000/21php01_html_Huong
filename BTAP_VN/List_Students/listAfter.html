@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lIST</title>
+    <script src="./listAfter.js"></script>
+</head>
+<style>
+    * {
+        font-family: verdana;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <lable for="name">Họ Tên</lable>
+            </td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>
+                <lable for="age">Tuôi</lable>
+            </td>
+            <td><input type="text" id="age"></td>
+        </tr>
+        <tr>
+            <td>
+                <lable for="email">Email</lable>
+            </td>
+            <td><input type="text" id="email"></td>
+        </tr>
+        <tr>
+            <td>
+                <lable for="address">Quê Quán</lable>
+            </td>
+            <td><input type="text" id="address"></td>
+        </tr>
+    </table>
+    <button onclick="addData();" id="addbtn">Add</button>
+    <button onclick="editData();" id="editbtn">Edit</button>
+    <button onclick="deleteData();" id="deletebtn">Delete</button>
+    <button onclick="viewData();" id="viewbtn">View</button>
+
+    <div id="database"></div>
+
+    
+    <script>
+        var data = [];
+
+        //Hiển thị
+        function viewData() {
+            var list = this.data;
+            var table = '<table border="1" cellpadding="5"><thead><tr><th>Họ và tên</th><th>Tuổi</th><th>Email</th><th>Quê Quán</th><th>Action</th></tr></thead><tbody>';
+            
+            for (var i = 0; i < list.length; i++) {
+                table += '<tr>';
+                table +=  '<td>' +list[i].name + '</td>'; 
+                table +=  '<td>' +list[i].age + '</td>'; 
+                table +=  '<td>' +list[i].email + '</td>'; 
+                table +=  '<td>' +list[i].address + '</td>'; 
+                table +=  '<td><button onClick="DeletePerson('+"'"+ list[i].name+"'" +')">Delete</button></td>'; 
+                table += '</tr>';
+            }
+            table += '</tbody></table>';
+            document.getElementById('database').innerHTML = table;
+        }
+        // Thêm mới
+        function addData() {
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+
+            var item = {
+                name: name,
+                age: age,
+                email: email,
+                address: address,
+            };
+            this.data.push(item);
+            viewData();
+        }
+        // Delete
+        function DeletePerson(name){
+            /* console.log(name); */
+            var list = this.data;
+            for (var i=0;i<list.length;i++){
+                if(list[i].name == name){
+                    //xóa
+                    list.splice(i,1);
+                   
+                }
+            }
+            viewData();
+        }
+    </script>
+</body>
+
+</html>
