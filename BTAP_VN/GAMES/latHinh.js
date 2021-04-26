@@ -1,16 +1,16 @@
 
 const cards = document.querySelectorAll('.both');
 
-let hasFlippedCard = false;//biến kt
-let lockBoard = false;//chặn lật hình
+let hasFlippedCard = false;//kt
+let lockBoard = false;//block lh
 let firstCard, secondCard;
 
 function flipCard() {
-  if (lockBoard) return;//
-  if (this === firstCard) return;//ngăn lật hình 2 lần
+  if (lockBoard) return;
+  if (this === firstCard) return;//block lật 2 lần
 
   this.classList.add('flip');
-  //kt đã có image nào lật hay chưa
+  //kt  image
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
@@ -21,7 +21,7 @@ function flipCard() {
   secondCard = this;
   checkForMatch();
 }
-//so sánh
+//ss
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
