@@ -29,15 +29,15 @@ document.addEventListener("DOMContentLoaded",function(){
             for(var i = 0 ; slide = slide.previousElementSibling ; vitrislide ++){
             }
             for(var i = 0 ; i < slides.length; i++){
-                slides[i].classList.remove('ra'); // remove hết những thằng đang có class 'ra'
+                slides[i].classList.remove('ra'); // remove hết những cái đang có class 'ra'
             }
             if(vitrislide == slides.length - 1){
                 slides[0].classList.add('ra');
-                    // Thằng này có nghĩa là sau khi tự động chuyển đến slide cuối cùng nó quay lại thằng 0
+                    // sau khi tự động chuyển đến slide cuối cùng nó quay lại thằng 0
             }
             else{
             slides[vitrislide].nextElementSibling.classList.add('ra');
-                   // Đây là then chốt của auto slide nó sẽ chuyển sang cái thằng tiếp theo.
+                   // Đây là then chốt của auto slide nó sẽ chuyển sang cái slide tiếp theo.
         }
         },4000)
     // Tu dong chuyen slide
