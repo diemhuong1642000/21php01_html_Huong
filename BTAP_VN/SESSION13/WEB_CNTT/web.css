@@ -21,13 +21,14 @@
     background-color: white;
 } */
 .container2{
-   z-index: 10;
+   z-index: 15;
    top:0;
    width: 100%;
    position: -webkit-sticky;
    position: sticky;
    height:80px;
    background-color: white;}
+
 .slides{
     margin-top:10px;
 }

@@ -1,0 +1,14 @@
+
+.container{
+    width:100%;
+}
+.icon-right{
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    right:5px;
+} 
+.hovers:hover{
+    content: "0909023";
+}  
+
